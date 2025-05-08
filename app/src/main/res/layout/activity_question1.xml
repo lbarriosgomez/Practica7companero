@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityQuestion1"
+    android:orientation="vertical"
+    android:background="@drawable/background_quizziz"
+    android:id="@+id/mainContainer">
+
+    <ImageView
+        android:id="@+id/logoUfc"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:padding="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        app:srcCompat="@drawable/logo_ufc"
+        android:layout_marginTop="20dp"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/custom_progress_bar"
+        android:layout_marginBottom="-10dp"
+        android:translationZ="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageViewKhabib"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:scaleType="centerCrop"
+        android:src="@drawable/the_eagle1"
+        app:shapeAppearanceOverlay="@style/CustomRoundedImage"
+        android:layout_margin="30dp"
+        android:elevation="15dp"
+        app:strokeColor="#D20A0A"
+        app:strokeWidth="5dp"/>
+
+    <RelativeLayout
+        android:id="@+id/questionContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="29"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/textViewPreguntaKhabib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/bebasregular"
+            android:text="@string/preguntaKhabib"
+            android:textColor="@color/white"
+            android:textSize="33sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextRespuesta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewPreguntaKhabib"
+            android:ems="10"
+            android:maxLength="25"
+            android:inputType="text"
+            android:hint="@string/userAnswerEditText"
+            android:textColorHint="#707078"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/buttonNextQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textNextQuestion"
+        android:textSize="18sp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="15dp"
+        app:backgroundTint = "@null"
+        android:background="@drawable/custom_button"
+        android:layout_gravity="right"
+        android:layout_marginBottom="30dp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

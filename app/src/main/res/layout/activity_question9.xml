@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityQuestion8"
+    android:orientation="vertical"
+    android:background="@drawable/background_quizziz"
+    android:id="@+id/mainContainer">
+
+    <ImageView
+        android:id="@+id/logoUfc"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:padding="10dp"
+        app:srcCompat="@drawable/logo_ufc"
+        android:layout_marginTop="20dp"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/custom_progress_bar"
+        android:layout_marginBottom="-10dp"
+        android:translationZ="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageViewBrady"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:scaleType="centerCrop"
+        android:src="@drawable/chimaev"
+        app:shapeAppearanceOverlay="@style/CustomRoundedImage"
+        android:layout_margin="30dp"
+        android:elevation="8dp"
+        app:strokeColor="#D20A0A"
+        app:strokeWidth="5dp"/>
+
+    <RelativeLayout
+        android:id="@+id/questionContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="29"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/textViewPreguntaBrady"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/preguntaChimaev"
+            android:textColor="@color/white"
+            android:textSize="33sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/bebasregular"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"/>
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/textViewPreguntaBrady"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/opcion1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:textColor="@color/white"
+                android:textSize="23sp"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/opcion2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:textColor="@color/white"
+                android:textSize="23sp"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/opcion3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textSize="23sp"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/opcion4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:textColor="@color/white"
+                android:textSize="23sp"/>
+
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/buttonNextQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textNextQuestion"
+        android:textSize="18sp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="15dp"
+        app:backgroundTint = "@null"
+        android:background="@drawable/custom_button"
+        android:layout_gravity="right"
+        android:layout_marginBottom="30dp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

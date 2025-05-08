@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">MiniProjectQuizzUFC</string>
+    <string name="itsTime">IT\'S TIME</string>
+    <string name="buttonStart">START</string>
+    <string name="buttonTerminar">FINISH</string>
+    <string name="userAnswerEditText">Your answer</string>
+    <string name="preguntaKhabib">What is the name of this fighter?</string>
+    <string name="preguntaMerab">What is the nickname of this fighter?</string>
+    <string name="preguntaPereira">What word does this fighter always say?</string>
+    <string name="preguntaIlia">In what year did Ilia Topuria debut in the UFC?</string>
+    <string name="preguntaKamaru">How many times has Usman defended the title?</string>
+    <string name="preguntaCharles">How many submissions does Oliveira have in the UFC?</string>
+    <string name="preguntaBrady">How many defeats does Sean Brady have in the UFC?</string>
+    <string name="preguntaIslam">How many title defenses does Makhachev have in the UFC?</string>
+    <string name="preguntaChimaev">In what round did Khamzhat submit Whittaker?</string>
+    <string name="preguntaGoat">Who is the GOAT of the UFC?</string>
+    <string name="textNextQuestion">NEXT QUESTION</string>
+    <string name="toastCorrectAnswer">You are on fire! 🚀</string>
+    <string name="toastWrongAnswer">Do not give up! 👊</string>
+    <string name="toastNoAnswer">Wake up! ⏳</string>
+    <string name="textViewQuizziz">ULTIMATE QUIZZIZ CHAMPIONSHIP</string>
+    <string name="yourScoreTextView">Your score:</string>
+    <string name="userScore">0</string>
+</resources>
